@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+    <style>
+        body {
+            font-family: Arial;
+            max-width: 600px;
+            margin: 30px auto;
+        }
+        .todo {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+        .completed {
+            text-decoration: line-through;
+            opacity: 0.6;
+        }
+        button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Todo Application</h2>
+    <div id="add-section">
+        <input type="text" id="newTodo" placeholder="Enter your task...">
+        <button onclick="addTodo()">Add</button>
+    </div>
+    <div id="todo-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
